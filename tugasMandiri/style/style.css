@@ -1,0 +1,218 @@
+:root {
+    --primary: #ffffff;
+    --secondary: #0075FF;
+    --footer: #c5c4be;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    color: var(--primary);
+}
+/* header */
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 5rem;
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header.navbar div.logo a {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 2rem;
+}
+header.navbar div.logo a span.logoBlue {
+    color: var(--secondary);
+}
+header.navbar nav.navigation a {
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+header.navbar div.flCta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+}
+header.navbar div.flCta button{
+    background-color: var(--primary);
+    padding: 0.3rem 1rem;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+header.navbar div.flCta i.home {
+    color: var(--primary);
+}
+header.navbar div.flCta button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+header.navbar nav.navigation a:hover {
+    color: var(--secondary);
+}
+/* content1 */
+main .wrapperContent1 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../assets/laptop-device-with-minimalist-monochrome-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+main .wrapperContent1 .content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 10%;
+    max-width: 40rem;
+}
+main .wrapperContent1 .content1 section.mainText h1 {
+    font-size: 2.7rem;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+.shopCta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary);
+    border-radius: 50px;
+    color: #000000;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.shopCta:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+/* content1 */
+
+/* content2 menu */
+main .wrapperContent2 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+main .wrapperContent2 .box {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .wrapperContent2 .one {
+    background-image: url(../assets/black-wireless-earbud-with-charging-case.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .wrapperContent2 .two {
+    background-image: url(../assets/levitating-product-display-with-headphones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .wrapperContent2 .three {
+    background-image: url(../assets/still-life-wireless-cyberpunk-earbuds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .wrapperContent2 .four {
+    background-image: url(../assets/still-life-wireless-cyberpunk-headphones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .wrapperContent2 .box .itemDesc {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* /content2 menu */
+
+/* content 3 ourStory */
+main .wrapperContent3 {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../assets/ourStory5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+main .wrapperContent3 .content3 section.mainText h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+main .wrapperContent3 .content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10%;
+    max-width: 45rem;
+}
+.ourStoryCta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary);
+    border-radius: 50px;
+    color: #000000;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.ourStoryCta:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+/* /content3 our story */
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5rem 10%;
+    min-height: 45vh;
+    background-color: var(--footer);
+    color: #000000;
+}
+footer div.logo h2 span.logoBlue {
+    color: var(--secondary);
+}
+footer ul li a {
+    color: #000000;
+    transition: all 0.3s ease;
+}
+footer ul li a:hover {
+    color: var(--secondary);
+}
+/* /footer */

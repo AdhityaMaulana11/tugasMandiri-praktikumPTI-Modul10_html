@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoru Shop</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="navbar">
+        <div class="flCta">
+            <button>Follow</button>
+            <i data-feather="home" class="home"></i>
+        </div>
+        <div class="logo">
+            <a href="#home">
+                <span class="logoBlue">Y</span>or<span class="logoBlue">u</span>
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="#shop">Shop</a>
+            <a href="#ourStory">Our Story</a>
+            <a href="#">Journal</a>
+        </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- content -->
+    <main>
+        <div id="home" class="wrapperContent1">
+            <div class="content1">
+                <section class="mainText">
+                    <h1>Macbook Air M2</h1>
+                    <p style="text-align: right;">Redesigned with the next-gen
+                        M2 chip, Macbook Air is incredibly thin
+                        and delivers exceptional speed
+                        and power efficiency.</p>
+                </section>
+                <a href="#" class="shopCta">Shop Now</a>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <div id="shop" class="wrapperContent2">
+            <div class="box one">
+                <div class="itemDesc">
+                    <section class="text">
+                        <h2>Black Wireless Earbuds</h2>
+                        <p>Elegant, simple, covenient</p>
+                    </section>
+                    <a href="#" class="shopCta">Shop Now</a>
+                </div>
+            </div>
+            <div class="box two">
+                <div class="itemDesc">
+                    <section class="text">
+                        <h2>Black Wireless Headphone</h2>
+                        <p>Bold, simple, comfy</p>
+                    </section>
+                    <a href="#" class="shopCta">Shop Now</a>
+                </div>
+            </div>
+            <div class="box three">
+                <div class="itemDesc">
+                    <section class="text">
+                        <h2>Still-Life Wireless Earbuds (Cyberpunk theme)</h2>
+                        <p>Futuristic, simple, on the go</p>
+                    </section>
+                    <a href="#" class="shopCta">Shop Now</a>
+                </div>
+            </div>
+            <div class="box four">
+                <div class="itemDesc">
+                    <section class="text">
+                        <h2>Still-Life Wireless Headphone (Cyberpunk theme)</h2>
+                        <p>Futuristic, simple, clean</p>
+                    </section>
+                    <a href="#" class="shopCta">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- /menu -->
+
+        <div id="ourStory" class="wrapperContent3">
+            <div class="content3">
+                <section class="mainText">
+                    <h1>Customers is our top priority</h1>
+                    <p>Experience Authenticity: Elevate Your Shopping with 100% Originality Guaranteed. 
+                        Your Trust, Our Commitment.
+                    </p>
+                </section>
+                <a href="#" class="ourStoryCta">Our Story</a>
+            </div>
+        </div>
+    </main>
+    <!-- /content -->
+
+    <!-- footer -->
+    <footer>
+        <div class="logo">
+            <h2>
+                Copyright &copy;Adhitya/<span class="logoBlue">Y</span><span style="color: #ffff;">or</span><span class="logoBlue">u</span>
+            </h2>
+        </div>
+        <ul>
+            <li><a href="">Delivery & Returns</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">FAQs & Help</a></li>
+            <li><p>Inspired by:</p></li>
+            <li><a href="https://nolii.com/?ref=httpster.net" target="_blank" rel="noopener noreferrer">nolli.com</a></li>
+            <li><a href="https://httpster.net/" target="_blank" rel="noopener noreferrer">httpster.net</a></li>
+        </ul>
+    </footer>
+    <!-- /footer -->
+
+    <!-- feather icons -->
+    <script>
+        feather.replace();
+    </script>
+    <!-- /feather icons -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", () => {
+            const navbar = document.querySelector("header.navbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 200);
+        })
+    </script>
+</body>
+</html>
