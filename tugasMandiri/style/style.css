@@ -208,11 +208,11 @@ footer {
 footer div.logo h2 span.logoBlue {
     color: var(--secondary);
 }
-footer ul li a {
+footer ul li a, div.logo h2 a {
     color: #000000;
     transition: all 0.3s ease;
 }
-footer ul li a:hover {
+footer ul li a:hover, div.logo h2 a:hover {
     color: var(--secondary);
 }
 /* /footer */
